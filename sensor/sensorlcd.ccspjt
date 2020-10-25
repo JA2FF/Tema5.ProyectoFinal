@@ -1,0 +1,43 @@
+[PROJECT]
+Target=sensorlcd.hex
+Processor_Text=PIC16F887
+CCSVersion=5.061
+Compiler=PCM
+[Target Data]
+FileList=sensorlcd.c
+[sensorlcd.c]
+Type=4
+[mru-list]
+1=sensorlcd.c
+
+[defines]
+buildcount=11
+
+[Opened Files]
+1=sensorlcd.c
+t1=11
+Count=1
+
+[ProjectLog]
+Days=1
+D1=24-10-2020
+D1_L=12
+D1_L1=[50876]Stopped Editing.
+TotalEdit=91
+TotalDebug=0
+D1_E=91
+D1_D=0
+D1_L2=[50876]Project Closed.
+D1_L3=[50876]Project Opened.
+D1_L4=[50957]Project Closed.
+D1_L5=[50957]Project Opened.
+D1_L6=[51117]Started Editing.
+D1_L7=[54709]Stopped Editing.
+D1_L8=[55364]Started Editing.
+D1_L9=[55707]Stopped Editing.
+D1_L10=[56243]Started Editing.
+D1_L11=[56755]Stopped Editing.
+D1_L12=[73417]Project Closed.
+[Units]
+Count=1
+1=sensorlcd (main)

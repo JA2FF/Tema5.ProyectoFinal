@@ -1,0 +1,132 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     lcd
+008     lcdlat
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 nbitsADC
+022-025 LM35
+026-027 @sprintf_string
+028-029 @ITOF.P1
+028     lcd_init.i
+028-02B @PRINTF_L32D_626FPFPF.P1
+028     MAIN.@SCRATCH1
+028     @PSTRINGC7_626.@SCRATCH1
+029-02C lcd_init.LCD_INIT_STRING
+029     @PSTRINGC7_626.@SCRATCH2
+02A     @PSTRINGC7_626.@SCRATCH3
+02B     @PSTRINGC7_626.@SCRATCH4
+02C     @PRINTF_L32D_626FPFPF.P1
+02D     lcd_init.@SCRATCH1
+02D     @PRINTF_L32D_626FPFPF.@SCRATCH1
+02E     @PRINTF_L32D_626FPFPF.@SCRATCH2
+02F     @PRINTF_L32D_626FPFPF.@SCRATCH3
+030     @PRINTF_L32D_626FPFPF.@SCRATCH4
+031     @PRINTF_L32D_626FPFPF.@SCRATCH5
+032     @PRINTF_L32D_626FPFPF.@SCRATCH6
+033     @PRINTF_L32D_626FPFPF.@SCRATCH7
+034     @PRINTF_L32D_626FPFPF.@SCRATCH8
+035-038 @MULFF.P1
+035-038 @DIV3232.P2
+035     lcd_putc.c
+035-038 @FTOSD.P1
+036     @delay_ms1.P1
+036     lcd_gotoxy.x
+037     lcd_gotoxy.y
+038     lcd_gotoxy.address
+039-03C @DIV3232.P1
+039-03C @MULFF.P2
+039     lcd_gotoxy.@SCRATCH1
+039     @FTOSD.@SCRATCH1
+03A     lcd_send_byte.address
+03B     lcd_send_byte.n
+03C     lcd_read_byte.low
+03C     lcd_send_byte.@SCRATCH1
+03D     lcd_send_nibble.n
+03D     lcd_read_byte.high
+03D     @MULFF.@SCRATCH1
+03D     @DIV3232.@SCRATCH1
+03E     lcd_read_byte.@SCRATCH1
+03E     @MULFF.@SCRATCH2
+03E     @DIV3232.@SCRATCH2
+03F     @MULFF.@SCRATCH3
+03F     @DIV3232.@SCRATCH3
+040     @MULFF.@SCRATCH4
+040     @DIV3232.@SCRATCH4
+041     @MULFF.@SCRATCH5
+041     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const643.call
+00000A  @const648.call
+000014  @const649.call
+000017  @const655.call
+00001A  @const656.call
+000023  @delay_ms1
+000038  lcd_send_nibble
+000044  lcd_read_nibble
+00004A  lcd_send_byte
+000050  lcd_read_byte
+00008A  lcd_init
+0000C8  lcd_gotoxy
+0000DA  lcd_putc
+000106  @PSTRINGC7_626
+00015C  @ITOF
+00017B  @MULFF
+0001F0  @DIV3232
+00023F  @PRINTF_L32D_626FPFPF
+000266  @FTOSD
+000321  @cinit1
+000321  MAIN
+00033B  @cinit2
+
+Project Directory:
+    C:\Users\j9211\Desktop\sensor\
+
+Project Files:
+    sensorlcd.c                                             [24-oct.-20 15:40  CRC=3112BE29]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h   [28-jun.-16 13:57  CRC=7A426A52]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.c      [22-feb.-16 10:05  CRC=D1A6378A]
+
+Source signature=4EA1978F
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=2775
+
+Units:
+    sensorlcd (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   sensorlcd.xsym
+    Errors:      sensorlcd.err
+    Ext Symbols: sensorlcd.esym
+    INHX8:       sensorlcd.hex
+    Symbols:     sensorlcd.sym
+    List:        sensorlcd.lst
+    Debug/COFF:  sensorlcd.cof
+    Project:     sensorlcd.ccspjt
+    Call Tree:   sensorlcd.tre
+    Statistics:  sensorlcd.STA

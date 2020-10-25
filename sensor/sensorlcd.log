@@ -1,0 +1,26 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -DL -O11111114 -fo8 -N"C:\Users\j9211\Desktop\sensor\sensorlcd.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\j9211\Desktop\sensor\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "sensorlcd.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+error: 8	304	 error: Can't open include file "16f887.h"     #include <16F887.h>	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 9	304	 error: Unknown #directive "device"     #device ADC=10	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 10	304	 error: Unknown #directive "fuses"     #fuses INTRC_IO,NOCPD,NOWDT,NOPUT,NOLVP,NOBROWNOUT,MCLR	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 11	304	 error: Unknown #directive "use"     #use delay(clock=2M)	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 13	304	 error: Unknown #directive "use"     #use rs232(baud=9600,xmit=PIN_C6,rcv=PIN_C7)	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 14	304	 error: Can't open include file "lcd.c"     #include <lcd.c>	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 16	304	 error: Unknown #directive "use"     #use fast_IO(A)	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 17	304	 error: Unknown #directive "use"     #use fast_IO(B)	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+error: 18	304	 error: Unknown #directive "use"     #use fast_IO(C) 9 errors in preprocessor.	C:\Users\j9211\Desktop\sensor\sensorlcd.c
+diagnostics: 0	122	Compilation Started	sensorlcd.c
+error: 25	402	; expected, but 'resultado' found	sensorlcd.c
+error: 27	300	Syntax Error: ')' expected,  but 'primero' found	sensorlcd.c
+error: 27	402	; expected, but 'segundo' found	sensorlcd.c
+error: 27	402	; expected, but ')' found	sensorlcd.c
+error: 27	371	Specifier needed	sensorlcd.c
+error: 27	396	Invalid declarator expected'(' or identifier	sensorlcd.c
+error: 29	371	Specifier needed	sensorlcd.c
+error: 29	300	Syntax Error: ')' expected,  but 'true' found	sensorlcd.c
+error: 32	371	Specifier needed	sensorlcd.c
+error: 32	300	Syntax Error: ')' expected,  but '10' found	sensorlcd.c
+error: 33	402	; expected, but '=' found	sensorlcd.c
+error: 33	393	'conversion' Identifier redefined	sensorlcd.c
+error: 33	312	Internal error ''	sensorlcd.c
+error: 0	102	Finished (with errors): 24 oct. 2020, 11:15:13	sensorlcd.mcppi
